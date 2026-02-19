@@ -9,7 +9,8 @@ These are course projects. To prevent plagiarism, this repository only includes 
 ### 1) WellingtonTrains (Java)
 
 ## Demo
-- 🎥 Video demo (MP4): [Watch / Download](assets/wellingtontrains-demo.mp4)
+- 🎥 Video demo (MP4): https://github.com/MengNiu-3/Project-Showcase/releases/tag/demo-v1
+
 
 ## What I built (highlights)
 - Loaded and modelled real timetable data into `Station`, `TrainLine`, and `TrainService` objects.
