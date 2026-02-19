@@ -10,7 +10,7 @@ These are course projects. To prevent plagiarism, this repository only includes 
 
 ## Demo
 
-[![WellingtonTrains Demo](assets/WellingtonTrains Demo.png)](https://github.com/MengNiu-3/Project-Showcase/releases/download/demo-v1/Demo-WellingtonTrains.mp4)
+![WellingtonTrains Demo](assets/wellingtontrains-demo.png)(https://github.com/MengNiu-3/Project-Showcase/releases/download/demo-v1/Demo-WellingtonTrains.mp4)
 
 - 🎥 MP4 demo: [Watch / Download](https://github.com/MengNiu-3/Project-Showcase/releases/download/demo-v1/Demo-WellingtonTrains.mp4)
 
