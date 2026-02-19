@@ -76,6 +76,7 @@ Why this approach is clearer:
 ### 1) Build candidates + pick transfer station
 
 // Transfer station candidates: stations on BOTH the start line and a destination line
+
 Map<String, Station> transferStationCandidates = new HashMap<>();
 for (TrainLine destLine : destStation.getTrainLines()) {
     for (Station transferStation : destLine.getStations()) {
@@ -86,6 +87,7 @@ for (TrainLine destLine : destStation.getTrainLines()) {
 }
 
 // Pick the closest transfer station after the start station (smallest index > startIndex)
+
 for (Station transferS : transferStationCandidates.values()) {
     int idx = stationsOnLine.indexOf(transferS);
     if (idx > startIndex && (bestTransferIdx == -1 || idx < bestTransferIdx)) {
@@ -94,6 +96,7 @@ for (Station transferS : transferStationCandidates.values()) {
 }
 
 // Prefer Wellington if it is a valid candidate after the start station
+
 int wellIdx = stationsOnLine.indexOf(stations.get("Wellington"));
 if (wellIdx > startIndex && transferStationCandidates.containsKey("Wellington")) {
     bestTransferIdx = wellIdx;
@@ -103,6 +106,7 @@ if (bestTransferIdx == -1) { continue; }
 bestTransferStation = stationsOnLine.get(bestTransferIdx);
 
 ### 2) Match services for two legs (catchable connection)
+
 // Leg 1: earliest service from start -> transfer (depart >= query time)
 for (TrainService service : line.getTrainServices()) {
     List<Integer> times = service.getTimes();
@@ -142,10 +146,10 @@ for (TrainLine transferLine : bestTransferStation.getTrainLines()) {
 }
 ## What I learned
 
-### 1) Refactoring is part of problem-solving: simplifying the structure reduced bugs and made the algorithm explainable.
-### 2) Build a mental model first: drawing the network clarified constraints (direction, indices, “catchable” transfers).
-### 3)Readable logic wins: a solution that teammates can follow and verify is more valuable than a clever but tangled one.
-### 4) Ask for help early: discussing roadblocks with a tutor/mentor often unlocks new ideas and faster solutions.
+1) Refactoring is part of problem-solving: simplifying the structure reduced bugs and made the algorithm explainable.
+2) Build a mental model first: drawing the network clarified constraints (direction, indices, “catchable” transfers).
+3) Readable logic wins: a solution that teammates can follow and verify is more valuable than a clever but tangled one.
+4) Ask for help early: discussing roadblocks with a tutor/mentor often unlocks new ideas and faster solutions.
 
 ## Tech
 Java, Git/GitHub, VS Code, ECS100 library (course framework)
