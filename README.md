@@ -102,12 +102,16 @@ if (wellIdx > startIndex && transferStationCandidates.containsKey("Wellington"))
     bestTransferIdx = wellIdx;
 }
 
-if (bestTransferIdx == -1) { continue; }
+if (bestTransferIdx == -1) { 
+    continue; 
+}
 bestTransferStation = stationsOnLine.get(bestTransferIdx);
+
 
 ### 2) Match services for two legs (catchable connection)
 
 // Leg 1: earliest service from start -> transfer (depart >= query time)
+
 for (TrainService service : line.getTrainServices()) {
     List<Integer> times = service.getTimes();
     int depart = times.get(startIndex);
@@ -123,6 +127,7 @@ for (TrainService service : line.getTrainServices()) {
 }
 
 // Leg 2: earliest catchable service from transfer -> destination (depart >= arriveTransfer)
+
 for (TrainLine transferLine : bestTransferStation.getTrainLines()) {
     if (!transferLine.getStations().contains(destStation)) continue;
 
