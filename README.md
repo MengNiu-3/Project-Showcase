@@ -9,7 +9,10 @@ These are course projects. To prevent plagiarism, this repository only includes 
 ### 1) WellingtonTrains (Java)
 
 ## Demo
-- 🎥 Video demo (MP4): https://github.com/MengNiu-3/Project-Showcase/releases/tag/demo-v1
+
+[![WellingtonTrains Demo](assets/WellingtonTrains Demo.png)](https://github.com/MengNiu-3/Project-Showcase/releases/download/demo-v1/Demo-WellingtonTrains.mp4)
+
+- 🎥 MP4 demo: [Watch / Download](https://github.com/MengNiu-3/Project-Showcase/releases/download/demo-v1/Demo-WellingtonTrains.mp4)
 
 
 ## What I built (highlights)
