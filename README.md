@@ -9,8 +9,7 @@ These are course projects. To prevent plagiarism, this repository only includes 
 ### 1) WellingtonTrains (Java)
 
 ## Demo
-- Screenshot/GIF: `assets/wellingtontrains-demo.gif`
-- What you can see: station/line queries, next services lookup, and trip finding (direct or one transfer).
+- 🎥 Video demo (MP4): [Watch / Download](assets/wellingtontrains-demo.mp4)
 
 ## What I built (highlights)
 - Loaded and modelled real timetable data into `Station`, `TrainLine`, and `TrainService` objects.
